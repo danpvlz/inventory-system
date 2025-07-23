@@ -101,31 +101,17 @@ This development plan outlines the phases, tasks, and priorities for building a 
 - image_url (optional)
 - created_at
 
-### `inputs`
+### `movements`
 - id
 - product_id (FK)
+- type (input, output or sale)
 - quantity
 - date
 - note
-- created_at
-
-### `outputs`
-- id
-- product_id (FK)
-- quantity
-- date
 - reason
-- created_at
-
-### `sales`
-- id
-- product_id (FK)
-- quantity
-- price
-- date
 - customer_name
-- note
-- payment_status (pending/paid)
+- price -- only used for sales
+- payment_status (pending/paid) -- optional for sales
 - created_at
 
 ---
