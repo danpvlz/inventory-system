@@ -51,8 +51,7 @@ export default function ProductsPage() {
     // Calculate stock for each product
     const stock: Record<string, number> = {};
     for (const product of products) {
-      let s = product.stock ?? 0;
-      stock[product.id] = s;
+      stock[product.id] = product.stock ?? 0;
     }
     setProducts(products);
     setStockMap(stock);
